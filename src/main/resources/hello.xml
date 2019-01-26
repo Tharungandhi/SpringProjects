@@ -10,6 +10,47 @@
  
 	<bean id="helloWorldService"
 		class="com.bridgelabz.spring.HelloWorldService">
-		<property name="name" value="Tharun Kumar" />
+		<property name="name" value="Tharun Gandhi" />
 	</bean>
+	
+	<bean id="employee" class="com.bridgelabz.spring.Employee">  
+<constructor-arg value="18" type="int"></constructor-arg>  
+<constructor-arg value="Tharun Gandhi"></constructor-arg>  
+</bean>  
+
+	
+<bean id="empdetails" class="com.bridgelabz.spring.EmployeeDetails">  
+<constructor-arg value="18" type="int"></constructor-arg>  
+<constructor-arg value="Tharun Gandhi"></constructor-arg>  
+<constructor-arg>  
+<ref bean="a1"/>  
+</constructor-arg>  
+</bean>  
+
+
+
+<bean id="a1" class="com.bridgelabz.spring.Address">  
+<constructor-arg value="Banglore"></constructor-arg>  
+<constructor-arg value="Karnataka"></constructor-arg>  
+<constructor-arg value="India"></constructor-arg>  
+</bean>  
+  
+  <bean id="list" class="com.bridgelabz.spring.QuestionList">  
+<constructor-arg value="111"></constructor-arg>  
+<constructor-arg value="What is java?"></constructor-arg>  
+<constructor-arg>  
+<list>  
+<value>Java is a programming language</value>  
+<value>Java is a Platform Independent </value>  
+<value>Tharun gandhi</value>
+<value>Danush</value>  
+<value>Naveen</value>    
+</list>  
+</constructor-arg>  
+</bean>  
+  
+  
+  
+  
+  
 </beans>
