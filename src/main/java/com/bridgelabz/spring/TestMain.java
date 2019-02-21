@@ -12,10 +12,7 @@ public class TestMain {
       service.display();
       
       
-//	  Resource r=new ClassPathResource("applicationContext.xml");  
-//      BeanFactory factory=new XmlBeanFactory(r);  
-//      Employee service=(Employee) factory.getBean("e");
-//      service.display();
+
 
         
 

@@ -15,10 +15,7 @@ public class ListMain {
 		BeanFactory factory=new XmlBeanFactory(res);
 		QuestionList dilist=(QuestionList) factory.getBean("list");
 		dilist.displayInfo();
-//		
-//		ApplicationContext appcont=new ClassPathXmlApplicationContext("hello.xml");
-//		QuestionList ql=(QuestionList) appcont.getBean("list");
-//		ql.displayInfo();
+
 
 	}
 
